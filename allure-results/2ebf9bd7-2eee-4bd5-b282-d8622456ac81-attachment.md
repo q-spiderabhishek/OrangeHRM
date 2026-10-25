@@ -1,0 +1,291 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: pimemplistpom.spec.js >> validate the pim --> Add Employee
+- Location: tests\pimemplistpom.spec.js:24:5
+
+# Error details
+
+```
+Error: locator.setInputFiles: Error: Node is not an HTMLInputElement
+Call log:
+  - waiting for locator('//i[@class=\'oxd-icon bi-plus\']')
+    - locator resolved to <i data-v-bddebfba="" data-v-f5c763eb="" class="oxd-icon bi-plus"></i>
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f3e3]:
+  - generic:
+    - complementary [ref=f3e4]:
+      - navigation "Sidepanel" [ref=f3e5]:
+        - generic [ref=f3e6]:
+          - link [ref=f3e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=f3e9]
+          - text: 
+        - generic [ref=f3e10]:
+          - generic [ref=f3e11]:
+            - generic [ref=f3e12]:
+              - textbox "Search" [ref=f3e15]
+              - button "" [ref=f3e16] [cursor=pointer]
+            - separator [ref=f3e18]
+          - list [ref=f3e19]:
+            - listitem [ref=f3e20]:
+              - link "Admin" [ref=f3e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+            - listitem [ref=f3e25]:
+              - link "PIM" [ref=f3e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+            - listitem [ref=f3e41]:
+              - link "Leave" [ref=f3e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+            - listitem [ref=f3e46]:
+              - link "Time" [ref=f3e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+            - listitem [ref=f3e54]:
+              - link "Recruitment" [ref=f3e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+            - listitem [ref=f3e62]:
+              - link "My Info" [ref=f3e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+            - listitem [ref=f3e70]:
+              - link "Performance" [ref=f3e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+            - listitem [ref=f3e80]:
+              - link "Dashboard" [ref=f3e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+            - listitem [ref=f3e85]:
+              - link "Directory" [ref=f3e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+            - listitem [ref=f3e90]:
+              - link "Maintenance" [ref=f3e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+            - listitem [ref=f3e96]:
+              - link "Claim" [ref=f3e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+            - listitem [ref=f3e105]:
+              - link "Buzz" [ref=f3e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+    - banner [ref=f3e110]:
+      - generic [ref=f3e111]:
+        - generic [ref=f3e112]:
+          - text: 
+          - heading "PIM" [level=6] [ref=f3e114]
+        - link [ref=f3e116]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=f3e117] [cursor=pointer]
+        - list [ref=f3e123]:
+          - listitem [ref=f3e124]:
+            - generic [ref=f3e125] [cursor=pointer]:
+              - img "profile picture" [ref=f3e126]
+              - paragraph [ref=f3e127]: Muhammad Rehman
+              - generic [ref=f3e128]: 
+      - navigation "Topbar Menu" [ref=f3e130]:
+        - list [ref=f3e131]:
+          - listitem [ref=f3e132] [cursor=pointer]:
+            - generic [ref=f3e133]:
+              - text: Configuration
+              - generic [ref=f3e134]: 
+          - listitem [ref=f3e135] [cursor=pointer]:
+            - link "Employee List" [ref=f3e136]:
+              - /url: "#"
+          - listitem [ref=f3e137] [cursor=pointer]:
+            - link "Add Employee" [ref=f3e138]:
+              - /url: "#"
+          - listitem [ref=f3e139] [cursor=pointer]:
+            - link "Reports" [ref=f3e140]:
+              - /url: "#"
+          - button "" [ref=f3e142] [cursor=pointer]
+  - generic [ref=f3e144]:
+    - generic [ref=f3e147]:
+      - heading "Add Employee" [level=6] [ref=f3e148]
+      - separator [ref=f3e149]
+      - generic [ref=f3e150]:
+        - generic [ref=f3e151]:
+          - generic [ref=f3e152]:
+            - generic [ref=f3e154]:
+              - button "Choose File" [active]
+              - generic [ref=f3e155]:
+                - img "profile picture" [ref=f3e157]
+                - button "" [ref=f3e158] [cursor=pointer]
+            - paragraph [ref=f3e160]: "Accepts jpg, .png, .gif up to 1MB. Recommended dimensions: 200px X 200px"
+          - generic [ref=f3e161]:
+            - generic [ref=f3e162]:
+              - generic [ref=f3e165]:
+                - generic [ref=f3e166]: Employee Full Name*
+                - generic [ref=f3e168]:
+                  - textbox "First Name" [ref=f3e171]: Abhishek
+                  - textbox "Middle Name" [ref=f3e174]: Bharatbhai
+                  - textbox "Last Name" [ref=f3e177]: Patel
+              - generic [ref=f3e180]:
+                - generic [ref=f3e181]: Employee Id
+                - textbox [ref=f3e184]: "0517"
+            - separator [ref=f3e185]
+            - generic [ref=f3e186]:
+              - paragraph [ref=f3e187]: Create Login Details
+              - checkbox [checked] [ref=f3e190]
+            - generic [ref=f3e193]:
+              - generic [ref=f3e195]:
+                - generic [ref=f3e196]: Username*
+                - textbox [ref=f3e199]: Ghuluboy
+              - generic [ref=f3e201]:
+                - generic [ref=f3e202]: Status
+                - generic [ref=f3e204]:
+                  - generic [ref=f3e208] [cursor=pointer]:
+                    - radio "Enabled" [ref=f3e209]
+                    - text: Enabled
+                  - generic [ref=f3e214] [cursor=pointer]:
+                    - radio "Disabled" [checked] [ref=f3e215]
+                    - text: Disabled
+            - generic [ref=f3e218]:
+              - generic [ref=f3e219]:
+                - generic [ref=f3e220]: Very Weak
+                - generic [ref=f3e221]:
+                  - generic [ref=f3e222]: Password*
+                  - textbox [ref=f3e225]: P..Abhi@2896
+                - paragraph [ref=f3e226]: For a strong password, please use a hard to guess combination of text with upper and lower case characters, symbols and numbers
+              - generic [ref=f3e228]:
+                - generic [ref=f3e229]: Confirm Password*
+                - textbox [ref=f3e232]: P..Abhi@2896
+        - separator [ref=f3e233]
+        - generic [ref=f3e234]:
+          - paragraph [ref=f3e235]: "* Required"
+          - button "Cancel" [ref=f3e236] [cursor=pointer]
+          - button "Save" [ref=f3e237] [cursor=pointer]
+    - generic [ref=f3e238]:
+      - paragraph [ref=f3e239]: OrangeHRM OS 5.9
+      - paragraph [ref=f3e240]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=f3e241] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
+
+# Test source
+
+```ts
+  26  |     this.uname = page.locator("//input[@class='oxd-input oxd-input--active']").nth(2);
+  27  |     this.pw = page.locator("//input[@type='password']").nth(0);
+  28  |     this.cpw = page.locator("//input[@type='password']").nth(1);
+  29  |     this.radiobtn = page.locator("//span[@class='oxd-radio-input oxd-radio-input--active --label-right oxd-radio-input']").nth(1);
+  30  |     this.uploadfile = page.locator("//i[@class='oxd-icon bi-plus']");
+  31  |     this.cancel = page.locator("//button[text()=' Cancel ']");
+  32  |     this.save = page.locator("//button[text()=' Save ']");
+  33  | 
+  34  | //     var singlefile = await page.locator("//input[@id='singleFileInput']");
+  35  | //    await singlefile.setInputFiles("Files/sample1.pdf");
+  36  | 
+  37  | 
+  38  | }
+  39  |  // Action of PIM --> Employee list
+  40  | async createempname(empname1){
+  41  | 
+  42  |     await this.empname.fill(empname1);
+  43  | }
+  44  | async createempid(empid1){
+  45  | 
+  46  |     await this.empid.fill(empid1);
+  47  | }
+  48  | async createsupervisor(supervisor1){
+  49  | 
+  50  |     await this.supervisorname.fill(supervisor1);
+  51  | }
+  52  | async empstatusdropdown(){
+  53  | 
+  54  |     await this.empstatus.click();
+  55  |     await this.empstatus.getByRole('option', { name: 'Freelance', exact: true });
+  56  |     
+  57  | }
+  58  | async includedropdown(){
+  59  | 
+  60  |     await this.include.click();
+  61  |     await this.include.getByRole('option', { name: 'Past Employees Only', exact: true });
+  62  | }
+  63  | async jobtiteldropdown(){
+  64  | 
+  65  |     await this.jobtitel.click();
+  66  |     await this.jobtitel.getByRole('option', { name: 'Automation Tester', exact: true });
+  67  | }
+  68  | async resetbtn1(){
+  69  | 
+  70  |     await this.resetbtn.click();
+  71  | }
+  72  | async searchbtn1(){
+  73  | 
+  74  |     await this.searchbtn.click();
+  75  | }
+  76  | async addbtn1(){
+  77  | 
+  78  |     await this.addbtn.click();
+  79  | }
+  80  | 
+  81  | 
+  82  | 
+  83  | // Action of PIM --> Add employee
+  84  | 
+  85  | 
+  86  | 
+  87  | async addemp1(){
+  88  | 
+  89  |     await this.addemp.click();
+  90  | }
+  91  | async firstname(fname1){
+  92  | 
+  93  |     await this.fname.fill(fname1);
+  94  | }
+  95  | async middlename(mname1){
+  96  | 
+  97  |     await this.mname.fill(mname1);
+  98  | }
+  99  | async lastname(lname1){
+  100 | 
+  101 |     await this.lname.fill(lname1);
+  102 | }
+  103 | async tglbtn(){
+  104 | 
+  105 |     await this.togglebtn.click();
+  106 | }
+  107 | async username(uname1){
+  108 | 
+  109 |     await this.uname.fill(uname1);
+  110 | }
+  111 | async password(pw1){
+  112 | 
+  113 |     await this.pw.fill(pw1);
+  114 | }
+  115 | async cpassword(cpw1){
+  116 | 
+  117 |     await this.cpw.fill(cpw1);
+  118 | }
+  119 | async radiobtn1(){
+  120 | 
+  121 |     await this.radiobtn.click();
+  122 | }
+  123 | async uploadfile1(){
+  124 | 
+  125 |     await this.uploadfile.click();
+> 126 |     await this.uploadfile.setInputFiles("Files/CYMERA_20150206_000746.jpg");
+      |     ^ Error: locator.setInputFiles: Error: Node is not an HTMLInputElement
+  127 | }
+  128 | 
+  129 | async cancelbtn1(){
+  130 | 
+  131 |     await this.cancel.click();
+  132 | }
+  133 | async savebtn1(){
+  134 | 
+  135 |     await this.save.click();
+  136 | }
+  137 | 
+  138 | }
+  139 | 
+  140 | module.exports = {pimpagefunction}
+```
